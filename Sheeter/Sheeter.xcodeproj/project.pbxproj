@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8013C5252058EC0800305A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C5242058EC0800305A3C /* AppDelegate.swift */; };
+		8013C5272058EC0800305A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C5262058EC0800305A3C /* ViewController.swift */; };
+		8013C52A2058EC0800305A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8013C5282058EC0800305A3C /* Main.storyboard */; };
+		8013C52C2058EC0800305A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8013C52B2058EC0800305A3C /* Assets.xcassets */; };
+		8013C52F2058EC0800305A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8013C52D2058EC0800305A3C /* LaunchScreen.storyboard */; };
+		8013C5352058F8AF00305A3C /* Sheeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C5342058F8AF00305A3C /* Sheeter.swift */; };
+		8013C5382058F8C100305A3C /* SheeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C5362058F8C100305A3C /* SheeterViewController.swift */; };
+		8013C53B2058FAC100305A3C /* SheeterDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C53A2058FAC100305A3C /* SheeterDropDown.swift */; };
+		8013C53D2058FB0900305A3C /* SheeterActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C53C2058FB0900305A3C /* SheeterActionSheet.swift */; };
+		8013C5482058FC6D00305A3C /* Sheeter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8013C5372058F8C100305A3C /* Sheeter.xib */; };
+		8013C54A205908F700305A3C /* Sheeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8013C5132058EBD800305A3C /* Sheeter.framework */; };
+		8013C54B205908F700305A3C /* Sheeter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8013C5132058EBD800305A3C /* Sheeter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8013C5502059092E00305A3C /* SheeterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8013C54F2059092E00305A3C /* SheeterBundle.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8013C54C205908F700305A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8013C50A2058EBD800305A3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8013C5122058EBD800305A3C;
+			remoteInfo = Sheeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8013C54E205908F800305A3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8013C54B205908F700305A3C /* Sheeter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8013C5132058EBD800305A3C /* Sheeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sheeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8013C5172058EBD800305A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8013C5222058EC0800305A3C /* SheeterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheeterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8013C5242058EC0800305A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8013C5262058EC0800305A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8013C5292058EC0800305A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8013C52B2058EC0800305A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8013C52E2058EC0800305A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8013C5302058EC0800305A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8013C5342058F8AF00305A3C /* Sheeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sheeter.swift; sourceTree = "<group>"; };
+		8013C5362058F8C100305A3C /* SheeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheeterViewController.swift; sourceTree = "<group>"; };
+		8013C5372058F8C100305A3C /* Sheeter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Sheeter.xib; path = ../Sheeter/Sheeter.xib; sourceTree = "<group>"; };
+		8013C53A2058FAC100305A3C /* SheeterDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheeterDropDown.swift; sourceTree = "<group>"; };
+		8013C53C2058FB0900305A3C /* SheeterActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheeterActionSheet.swift; sourceTree = "<group>"; };
+		8013C5422058FC6200305A3C /* SheeterBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheeterBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8013C5442058FC6200305A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8013C54F2059092E00305A3C /* SheeterBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SheeterBundle.bundle; path = "../../../../../../Users/zhuxuhong/Library/Developer/Xcode/DerivedData/Sheeter-fawcakfchsjhzbabzceheonsvpwx/Build/Products/Debug-iphonesimulator/SheeterBundle.bundle"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8013C50F2058EBD800305A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C51F2058EC0800305A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C54A205908F700305A3C /* Sheeter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C53F2058FC6200305A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8013C5092058EBD800305A3C = {
+			isa = PBXGroup;
+			children = (
+				8013C5152058EBD800305A3C /* Sheeter */,
+				8013C5232058EC0800305A3C /* SheeterDemo */,
+				8013C5432058FC6200305A3C /* SheeterBundle */,
+				8013C5142058EBD800305A3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8013C5142058EBD800305A3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8013C5132058EBD800305A3C /* Sheeter.framework */,
+				8013C5222058EC0800305A3C /* SheeterDemo.app */,
+				8013C5422058FC6200305A3C /* SheeterBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8013C5152058EBD800305A3C /* Sheeter */ = {
+			isa = PBXGroup;
+			children = (
+				8013C5172058EBD800305A3C /* Info.plist */,
+				8013C5342058F8AF00305A3C /* Sheeter.swift */,
+				8013C5362058F8C100305A3C /* SheeterViewController.swift */,
+				8013C53A2058FAC100305A3C /* SheeterDropDown.swift */,
+				8013C53C2058FB0900305A3C /* SheeterActionSheet.swift */,
+				8013C54F2059092E00305A3C /* SheeterBundle.bundle */,
+			);
+			path = Sheeter;
+			sourceTree = "<group>";
+		};
+		8013C5232058EC0800305A3C /* SheeterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8013C5242058EC0800305A3C /* AppDelegate.swift */,
+				8013C5262058EC0800305A3C /* ViewController.swift */,
+				8013C5282058EC0800305A3C /* Main.storyboard */,
+				8013C52B2058EC0800305A3C /* Assets.xcassets */,
+				8013C52D2058EC0800305A3C /* LaunchScreen.storyboard */,
+				8013C5302058EC0800305A3C /* Info.plist */,
+			);
+			path = SheeterDemo;
+			sourceTree = "<group>";
+		};
+		8013C5432058FC6200305A3C /* SheeterBundle */ = {
+			isa = PBXGroup;
+			children = (
+				8013C5372058F8C100305A3C /* Sheeter.xib */,
+				8013C5442058FC6200305A3C /* Info.plist */,
+			);
+			path = SheeterBundle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8013C5102058EBD800305A3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8013C5122058EBD800305A3C /* Sheeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8013C51B2058EBD800305A3C /* Build configuration list for PBXNativeTarget "Sheeter" */;
+			buildPhases = (
+				8013C50E2058EBD800305A3C /* Sources */,
+				8013C50F2058EBD800305A3C /* Frameworks */,
+				8013C5102058EBD800305A3C /* Headers */,
+				8013C5112058EBD800305A3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sheeter;
+			productName = Sheeter;
+			productReference = 8013C5132058EBD800305A3C /* Sheeter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8013C5212058EC0800305A3C /* SheeterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8013C5312058EC0800305A3C /* Build configuration list for PBXNativeTarget "SheeterDemo" */;
+			buildPhases = (
+				8013C51E2058EC0800305A3C /* Sources */,
+				8013C51F2058EC0800305A3C /* Frameworks */,
+				8013C5202058EC0800305A3C /* Resources */,
+				8013C54E205908F800305A3C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8013C54D205908F700305A3C /* PBXTargetDependency */,
+			);
+			name = SheeterDemo;
+			productName = SheeterDemo;
+			productReference = 8013C5222058EC0800305A3C /* SheeterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8013C5412058FC6200305A3C /* SheeterBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8013C5452058FC6200305A3C /* Build configuration list for PBXNativeTarget "SheeterBundle" */;
+			buildPhases = (
+				8013C53E2058FC6200305A3C /* Sources */,
+				8013C53F2058FC6200305A3C /* Frameworks */,
+				8013C5402058FC6200305A3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SheeterBundle;
+			productName = SheeterBundle;
+			productReference = 8013C5422058FC6200305A3C /* SheeterBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8013C50A2058EBD800305A3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GuessMe;
+				TargetAttributes = {
+					8013C5122058EBD800305A3C = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					8013C5212058EC0800305A3C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					8013C5412058FC6200305A3C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8013C50D2058EBD800305A3C /* Build configuration list for PBXProject "Sheeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8013C5092058EBD800305A3C;
+			productRefGroup = 8013C5142058EBD800305A3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8013C5122058EBD800305A3C /* Sheeter */,
+				8013C5212058EC0800305A3C /* SheeterDemo */,
+				8013C5412058FC6200305A3C /* SheeterBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8013C5112058EBD800305A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C5502059092E00305A3C /* SheeterBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C5202058EC0800305A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C52F2058EC0800305A3C /* LaunchScreen.storyboard in Resources */,
+				8013C52C2058EC0800305A3C /* Assets.xcassets in Resources */,
+				8013C52A2058EC0800305A3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C5402058FC6200305A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C5482058FC6D00305A3C /* Sheeter.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8013C50E2058EBD800305A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C5352058F8AF00305A3C /* Sheeter.swift in Sources */,
+				8013C53B2058FAC100305A3C /* SheeterDropDown.swift in Sources */,
+				8013C5382058F8C100305A3C /* SheeterViewController.swift in Sources */,
+				8013C53D2058FB0900305A3C /* SheeterActionSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C51E2058EC0800305A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C5272058EC0800305A3C /* ViewController.swift in Sources */,
+				8013C5252058EC0800305A3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C53E2058FC6200305A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8013C54D205908F700305A3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8013C5122058EBD800305A3C /* Sheeter */;
+			targetProxy = 8013C54C205908F700305A3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8013C5282058EC0800305A3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8013C5292058EC0800305A3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8013C52D2058EC0800305A3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8013C52E2058EC0800305A3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8013C5192058EBD800305A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8013C51A2058EBD800305A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8013C51C2058EBD800305A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sheeter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gm.Sheeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8013C51D2058EBD800305A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sheeter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gm.Sheeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8013C5322058EC0800305A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SheeterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gm.SheeterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8013C5332058EC0800305A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SheeterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gm.SheeterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8013C5462058FC6200305A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SheeterBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gm.SheeterBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8013C5472058FC6200305A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SheeterBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gm.SheeterBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8013C50D2058EBD800305A3C /* Build configuration list for PBXProject "Sheeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C5192058EBD800305A3C /* Debug */,
+				8013C51A2058EBD800305A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8013C51B2058EBD800305A3C /* Build configuration list for PBXNativeTarget "Sheeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C51C2058EBD800305A3C /* Debug */,
+				8013C51D2058EBD800305A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8013C5312058EC0800305A3C /* Build configuration list for PBXNativeTarget "SheeterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C5322058EC0800305A3C /* Debug */,
+				8013C5332058EC0800305A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8013C5452058FC6200305A3C /* Build configuration list for PBXNativeTarget "SheeterBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C5462058FC6200305A3C /* Debug */,
+				8013C5472058FC6200305A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8013C50A2058EBD800305A3C /* Project object */;
+}
