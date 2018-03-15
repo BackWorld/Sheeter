@@ -56,6 +56,17 @@ public final class Sheeter: NSObject {
 }
 
 internal extension Sheeter{
+	static func holderViewController(for view: UIView) -> UIViewController? {
+		weak var parentResponder: UIResponder? = view
+		while parentResponder != nil {
+			parentResponder = parentResponder!.next
+			if let viewController = parentResponder as? UIViewController {
+				return viewController
+			}
+		}
+		return nil
+	}
+	
 	static var topViewControllerOfApplicationKeyWindow: UIViewController? {
 		var vc = topViewController(of: UIApplication.shared.keyWindow?.rootViewController)
 		while vc?.presentedViewController != nil {

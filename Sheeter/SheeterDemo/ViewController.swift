@@ -26,21 +26,11 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func actionSheetCustom(_ sender: Any) {
-		let label = UILabel(frame: CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: 0)))
-		label.numberOfLines = 0
-		label.text = "Custom Action Sheet Content View"
-		label.font = UIFont.systemFont(ofSize: 30)
-		label.sizeToFit()
-		Sheeter.actionSheet(customView: label)
+		Sheeter.actionSheet(customView: actionCollectionVC.view)
 	}
 
 	@IBAction func dropDownCustom(_ sender: UIButton) {
-		let label = UILabel(frame: CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: 0)))
-		label.numberOfLines = 0
-		label.text = "Custom Drop Down Content View"
-		label.font = UIFont.systemFont(ofSize: 30)
-		label.sizeToFit()
-		Sheeter.dropDown(from: sender, customView: label)
+		Sheeter.dropDown(from: sender, customView: actionCollectionVC.view)
 	}
 	
 	@IBAction func dropDown(_ sender: UIButton) {
@@ -51,6 +41,19 @@ class ViewController: UIViewController {
 		]) { (selected) in
 			print(selected)
 		}
+	}
+	
+	fileprivate var actionCollectionVC: ActionCollectionVC{
+		let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ActionCollectionVC") as! ActionCollectionVC
+		vc.view.frame = CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: 100))
+		vc.collectionView?.delegate = self
+		return vc
+	}
+}
+
+extension ViewController: UICollectionViewDelegate{
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		print("You clicked Action Item \(indexPath.item)")
 	}
 }
 

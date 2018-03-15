@@ -31,8 +31,12 @@ public class SheeterViewController: UIViewController {
 	
 	var customView: UIView? = nil{
 		didSet{
-			if let view = customView {
-				initialSetup(contentView: view, constraint: view.bounds.height)
+			guard let view = customView else{
+				return
+			}
+			initialSetup(contentView: view, constraint: view.bounds.height)
+			if let vc = Sheeter.holderViewController(for: view){
+				addChildViewController(vc)
 			}
 		}
 	}
