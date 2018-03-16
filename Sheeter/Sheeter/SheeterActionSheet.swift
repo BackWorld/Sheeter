@@ -11,11 +11,18 @@ import UIKit
 class SheeterActionSheet: SheeterViewController {
 
 // MARK: - IBOutlets
-    @IBOutlet weak var cancelButton: UIButton!
+	@IBOutlet weak var cancelButton: UIButton!
 
 // MARK: - Properties
 	override class var nibViewController: SheeterViewController?{
 		return Sheeter.nibs.last as? SheeterActionSheet
+	}
+	
+	override var appearance: Sheeter.Appearance{
+		didSet{
+			super.appearance = appearance
+			cancelButton.layer.cornerRadius = appearance.cornerRadius
+		}
 	}
 	
 // MARK: - Initial Method
@@ -39,7 +46,7 @@ class SheeterActionSheet: SheeterViewController {
 // MARK: - Public Method
 	override func animate(isShowing: Bool, completion: ((Void) -> Void)?) {
 		let value: CGFloat = isShowing
-			? 0
+			? appearance.margin
 			: -(wrapperViewHeightConstraint.constant + cancelButton.bounds.height + 10)
 		animateConstraint.constant = value
 		UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseInOut, animations: {

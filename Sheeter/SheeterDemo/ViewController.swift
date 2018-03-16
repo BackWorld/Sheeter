@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		Sheeter.Appearance.default.margin = 15
 	}
 	
 	@IBAction func actionSheet(_ sender: Any) {

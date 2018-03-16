@@ -12,7 +12,15 @@ public typealias SheeterActionHandler = ((Int) -> Void)
 
 public final class Sheeter: NSObject {
 // MARK: - Properties
-	internal static var nibs: [Any]{
+	public final class Appearance{
+		public static let `default` = Appearance()
+		
+		public var fontSize: CGFloat = 14
+		public var margin: CGFloat = 0
+		public var cornerRadius: CGFloat = 0
+	}
+	
+	static var nibs: [Any]{
 		return Bundle.main.loadNibNamed("Frameworks/Sheeter.framework/Sheeter", owner: nil, options: nil) ?? []
 	}
 	
@@ -23,26 +31,40 @@ public final class Sheeter: NSObject {
 	}
 	
 	@discardableResult
-	public static func actionSheet(items: [String], handler: @escaping SheeterActionHandler) -> SheeterViewController?{
-		return SheeterActionSheet.show(items: items, handler: handler)
+	public static func actionSheet(items: [String],
+	                               appearance: Appearance = .default,
+	                               handler: @escaping SheeterActionHandler) -> SheeterViewController?{
+		let vc = SheeterActionSheet.show(items: items, handler: handler)
+		vc?.appearance = appearance
+		return vc
 	}
 	
 	@discardableResult
-	public static func actionSheet(customView: UIView) -> SheeterViewController?{
-		return SheeterActionSheet.show(customView: customView)
+	public static func actionSheet(customView: UIView,
+	                               appearance: Appearance = .default) -> SheeterViewController?{
+		let vc = SheeterActionSheet.show(customView: customView)
+		vc?.appearance = appearance
+		return vc
 	}
 	
 	@discardableResult
 	public static func dropDown(from sender: UIView?,
 								items: [String],
 								selected index: Int = 0,
+								appearance: Appearance = .default,
 								handler: @escaping SheeterActionHandler) -> SheeterViewController?{
-		return SheeterDropDown.show(from: sender, items: items, selected: index, handler: handler)
+		let vc = SheeterDropDown.show(from: sender, items: items, selected: index, handler: handler)
+		vc?.appearance = appearance
+		return vc
 	}
 	
 	@discardableResult
-	public static func dropDown(from sender: UIView?, customView: UIView) -> SheeterViewController?{
-		return SheeterDropDown.show(from: sender, customView: customView)
+	public static func dropDown(from sender: UIView?,
+	                            customView: UIView,
+	                            appearance: Appearance = .default) -> SheeterViewController?{
+		let vc = SheeterDropDown.show(from: sender, customView: customView)
+		vc?.appearance = appearance
+		return vc
 	}
 }
 

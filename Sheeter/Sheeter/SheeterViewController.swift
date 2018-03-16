@@ -11,6 +11,8 @@ import UIKit
 public class SheeterViewController: UIViewController {
 // MARK: - IBOutlets
 	@IBOutlet weak var wrapperView: UIView!
+	@IBOutlet weak var wrapperViewLeadingConstraint: NSLayoutConstraint!
+	@IBOutlet weak var wrapperViewTrailingConstraint: NSLayoutConstraint!
 	@IBOutlet weak var wrapperViewHeightConstraint: NSLayoutConstraint!
 	@IBOutlet weak var animateConstraint: NSLayoutConstraint!
 	
@@ -47,6 +49,14 @@ public class SheeterViewController: UIViewController {
 	}
 	var handler: SheeterActionHandler? = nil
 	
+	var appearance: Sheeter.Appearance = .default{
+		didSet{
+			wrapperViewLeadingConstraint.constant = appearance.margin
+			wrapperViewTrailingConstraint.constant = appearance.margin
+			wrapperView.layer.cornerRadius = appearance.cornerRadius
+		}
+	}
+	
 // MARK: - Initial Method
 	private func setupUI() {
 		modalPresentationStyle = .overCurrentContext
@@ -82,7 +92,12 @@ public class SheeterViewController: UIViewController {
 	
 // MARK: - Private Method
 	func show(){
-		Sheeter.topViewControllerOfApplicationKeyWindow?.present(self, animated: false, completion: nil)
+		var vc = Sheeter.topViewControllerOfApplicationKeyWindow
+		if let isHidden = vc?.tabBarController?.tabBar.isHidden,
+			!isHidden {
+			vc = vc?.tabBarController
+		}
+		vc?.present(self, animated: false, completion: nil)
 	}
 	
 	func initialSetup(contentView: UIView, constraint constant: CGFloat){
@@ -148,6 +163,7 @@ extension SheeterViewController: UITableViewDataSource{
 
 		cell.textLabel?.textAlignment = .center
 		cell.textLabel?.text = items[indexPath.row]
+		cell.textLabel?.font = UIFont.systemFont(ofSize: appearance.fontSize)
 		
 		return cell
 	}
