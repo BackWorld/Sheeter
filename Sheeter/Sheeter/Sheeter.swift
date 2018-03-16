@@ -12,17 +12,8 @@ public typealias SheeterActionHandler = ((String) -> Void)
 
 public final class Sheeter: NSObject {
 // MARK: - Properties
-	static var xibBundle: Bundle?{
-		guard
-			let path = Bundle.main.path(forResource: "Frameworks/Sheeter.framework/SheeterBundle", ofType: "bundle"),
-			let bundle = Bundle(path: path) else{
-			return nil
-		}
-		return bundle
-	}
-	
 	internal static var nibs: [Any]{
-		return xibBundle?.loadNibNamed("Sheeter", owner: nil, options: nil) ?? []
+		return Bundle.main.loadNibNamed("Frameworks/Sheeter.framework/Sheeter", owner: nil, options: nil) ?? []
 	}
 	
 	
