@@ -8,7 +8,7 @@
 
 import UIKit
 
-public typealias SheeterActionHandler = ((String) -> Void)
+public typealias SheeterActionHandler = ((Int) -> Void)
 
 public final class Sheeter: NSObject {
 // MARK: - Properties

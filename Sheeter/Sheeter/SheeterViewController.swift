@@ -129,7 +129,7 @@ extension SheeterViewController: UITableViewDelegate{
 	public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
 		
-		handler?(items[indexPath.row])
+		handler?(indexPath.row)
 		dismiss()
 	}
 }
