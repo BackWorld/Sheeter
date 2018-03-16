@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801259C8205B9086004AC355 /* SheeterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8013C5422058FC6200305A3C /* SheeterBundle.bundle */; };
 		8013C5252058EC0800305A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C5242058EC0800305A3C /* AppDelegate.swift */; };
 		8013C5272058EC0800305A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C5262058EC0800305A3C /* ViewController.swift */; };
 		8013C52A2058EC0800305A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8013C5282058EC0800305A3C /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		8013C5482058FC6D00305A3C /* Sheeter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8013C5372058F8C100305A3C /* Sheeter.xib */; };
 		8013C54A205908F700305A3C /* Sheeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8013C5132058EBD800305A3C /* Sheeter.framework */; };
 		8013C54B205908F700305A3C /* Sheeter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8013C5132058EBD800305A3C /* Sheeter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8013C5502059092E00305A3C /* SheeterBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8013C54F2059092E00305A3C /* SheeterBundle.bundle */; };
 		801756CB205A09E100E6DF54 /* ActionCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801756CA205A09E100E6DF54 /* ActionCollectionVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,6 @@
 		8013C53C2058FB0900305A3C /* SheeterActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheeterActionSheet.swift; sourceTree = "<group>"; };
 		8013C5422058FC6200305A3C /* SheeterBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheeterBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8013C5442058FC6200305A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8013C54F2059092E00305A3C /* SheeterBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SheeterBundle.bundle; path = "../../../../../../Users/zhuxuhong/Library/Developer/Xcode/DerivedData/Sheeter-fawcakfchsjhzbabzceheonsvpwx/Build/Products/Debug-iphonesimulator/SheeterBundle.bundle"; sourceTree = "<group>"; };
 		801756CA205A09E100E6DF54 /* ActionCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCollectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +121,6 @@
 				8013C5362058F8C100305A3C /* SheeterViewController.swift */,
 				8013C53A2058FAC100305A3C /* SheeterDropDown.swift */,
 				8013C53C2058FB0900305A3C /* SheeterActionSheet.swift */,
-				8013C54F2059092E00305A3C /* SheeterBundle.bundle */,
 			);
 			path = Sheeter;
 			sourceTree = "<group>";
@@ -267,7 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8013C5502059092E00305A3C /* SheeterBundle.bundle in Resources */,
+				801259C8205B9086004AC355 /* SheeterBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
