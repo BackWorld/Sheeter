@@ -38,7 +38,7 @@ public class SheeterViewController: UIViewController {
 			}
 			initialSetup(contentView: view, constraint: view.bounds.height)
 			if let vc = Sheeter.holderViewController(for: view){
-				addChildViewController(vc)
+                addChild(vc)
 			}
 		}
 	}
@@ -113,12 +113,12 @@ public class SheeterViewController: UIViewController {
 	
 // MARK: - Public Method
 	func dismiss(){
-		animate(isShowing: false) { _ in
+		animate(isShowing: false) {
 			self.dismiss(animated: false, completion: nil)
 		}
 	}
 	
-	func animate(isShowing: Bool, completion: ((Void) -> Void)?){
+	@objc func animate(isShowing: Bool, completion: (() -> Void)?){
 		
 	}
 	

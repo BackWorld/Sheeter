@@ -44,7 +44,7 @@ class SheeterActionSheet: SheeterViewController {
 // MARK: - Private Method
 
 // MARK: - Public Method
-	override func animate(isShowing: Bool, completion: ((Void) -> Void)?) {
+	override func animate(isShowing: Bool, completion: (() -> Void)?) {
 		let value: CGFloat = isShowing
 			? appearance.margin
 			: -(wrapperViewHeightConstraint.constant + cancelButton.bounds.height + 10)

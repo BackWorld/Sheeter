@@ -44,7 +44,7 @@ class SheeterDropDown: SheeterViewController {
 		wrapperViewHeight = constant
 	}
 	
-	override func animate(isShowing: Bool, completion: ((Void) -> Void)?) {
+    override func animate(isShowing: Bool, completion: (() -> Void)?) {
 		let value: CGFloat = isShowing
 			? wrapperViewHeight
 			: 0
